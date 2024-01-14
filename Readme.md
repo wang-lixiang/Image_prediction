@@ -2,8 +2,16 @@
 
 
 train-model文件夹可以用来训练自己的模型，取出里面的checkpoint放入外面的checkpoint就可以进行图像预测；
+
 checkpoint文件夹存放模型训练好的参数；
+
 labels文件夹存放对应的类别，需要与你训练集的类别相同；
+
+Collecting_images文件夹是构建自己的数据集，利用爬虫从网络上爬取自己想要的数据
+
+
+本代码整个的流程是，先从Collecting_images文件中爬取获得自己的数据集，然后拿数据集到train-model中训练获得
+模型checkpoint和labels，放入对应的文件夹，然后运行Image_prediction.py就可以得到自己的图像分类预测项目。
 
 checkpoint文件夹中需自行下载文件，下好放入即可，链接：https://pan.baidu.com/s/112sOQdmZyb0_z_211fff4w?pwd=9999 
 
